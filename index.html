@@ -3,35 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SolanaSensei - The Mystical Memecoin Oracle</title>
+    <title>SolanaSensei - Memecoin Oracle</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Main Container -->
-    <div class="container">
-        <!-- Header -->
-        <div class="header">
-            <h1>SolanaSensei</h1>
-            <p>Connect your Phantom Wallet to receive your memecoin fortune!</p>
+    <header class="header">
+        <h1>SolanaSensei</h1>
+        <p class="tagline">The Mystical Oracle for Solana Memecoins</p>
+        <div class="header-right">
+            <div id="wallet-status">Wallet Status: Not Connected</div>
+            <button id="connect-wallet" onclick="connectWallet()">Connect Wallet</button>
+            <div class="social-icons">
+                <a href="https://telegram.org" target="_blank"><i class="fab fa-telegram"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
         </div>
+    </header>    
 
-        <!-- Wallet Connection Button -->
-        <button id="connect-wallet" onclick="connectWallet()">Connect Phantom Wallet</button>
-        <div id="wallet-status">Wallet Status: Not Connected</div>
+    <div class="container">
+        <!-- Left Side Real-Time Data Section -->
+        <aside class="sidebar">
+            <h2>Wallet Overview</h2>
+            <div id="wallet-balance">Balance: 0 SOL</div>
+            <div id="token-holdings">Holdings: None</div>
+            <div id="recent-transactions">Recent Transactions: None</div>
+        </aside>
 
-        <!-- Chat Window -->
-        <div class="chat">
+        <!-- Animated Chat Section -->
+        <section class="chat">
             <div class="chat-window" id="chat-window">
-                <div class="chat-message bot-message">
-                    Welcome! I am the SolanaSensei. Ask me anything, and I’ll consult the cosmos.
+                <div class="chat-message bot-message animate">
+                    🔮 Welcome, wise holder! Connect your wallet and ask your questions.
                 </div>
             </div>
             <div class="chat-input">
-                <input type="text" id="user-input" placeholder="Ask your question...">
-                <button onclick="sendMessage()">Send</button>
+                <input type="text" id="user-input" placeholder="Seek memecoin wisdom..." autocomplete="off">
+                <button class="send-button" onclick="sendMessage()">🔮</button>
             </div>
-        </div>
+        </section>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>

@@ -59,6 +59,6 @@ function sendMessage() {
             chatWindow.scrollTop = chatWindow.scrollHeight; // Scroll to the bottom
         }, 1000);
         
-        inputField.value = ""; // Clear input
+        inputField.value = ""; // Clear inputs
     }
 }

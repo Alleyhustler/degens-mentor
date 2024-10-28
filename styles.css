@@ -1,0 +1,97 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background-color: #1f1b24;
+    color: #e2e2e2;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+/* Header */
+.header {
+    margin-bottom: 20px;
+}
+
+/* Button */
+button {
+    background-color: #5865F2;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4752C4;
+}
+
+/* Wallet Status */
+#wallet-status {
+    margin: 10px;
+    font-size: 0.9em;
+}
+
+/* Chat Window */
+.chat {
+    background-color: #272b30;
+    border-radius: 8px;
+    overflow: hidden;
+    max-height: 400px;
+}
+
+.chat-window {
+    padding: 15px;
+    height: 300px;
+    overflow-y: auto;
+}
+
+.chat-input {
+    display: flex;
+    border-top: 1px solid #333;
+    padding: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    margin-right: 5px;
+}
+
+/* Message Styles */
+.chat-message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.bot-message {
+    background-color: #44475a;
+}
+
+.user-message {
+    background-color: #5865F2;
+    text-align: right;
+}

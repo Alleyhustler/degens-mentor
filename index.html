@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolanaSensei - The Mystical Memecoin Oracle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>SolanaSensei</h1>
+            <p>Connect your Phantom Wallet to receive your memecoin fortune!</p>
+        </div>
+
+        <!-- Wallet Connection Button -->
+        <button id="connect-wallet" onclick="connectWallet()">Connect Phantom Wallet</button>
+        <div id="wallet-status">Wallet Status: Not Connected</div>
+
+        <!-- Chat Window -->
+        <div class="chat">
+            <div class="chat-window" id="chat-window">
+                <div class="chat-message bot-message">
+                    Welcome! I am the SolanaSensei. Ask me anything, and I’ll consult the cosmos.
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Ask your question...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
